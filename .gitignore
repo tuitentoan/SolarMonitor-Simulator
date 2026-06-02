@@ -1,0 +1,15 @@
+# Bỏ qua file thực thi
+*.exe
+*.out
+*.app
+
+# Bỏ qua file object sinh ra trong quá trình biên dịch
+*.o
+*.obj
+
+# Bỏ qua file cấu hình cá nhân của VS Code (Tùy chọn, nhưng nên dùng)
+.vscode/
+
+# Bỏ qua thư mục build (nếu sau này bạn cấu hình nâng cao)
+build/
+bin/
