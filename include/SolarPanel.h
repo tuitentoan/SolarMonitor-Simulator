@@ -22,7 +22,7 @@ public:
         voltage = 45.5f;
         current = 12.5f;
     }
-    void displayStatus() override
+    void displayStatus() const override
     {
         std::cout << "[Solar Panel - " << name << "] V: " << voltage << "V, I: " << current << "A, P: " << getPower() << "W\n";
     }

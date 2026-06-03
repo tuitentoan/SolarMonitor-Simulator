@@ -23,6 +23,9 @@ bool Inverter::hasFault(uint8_t fault_mask) const
 
 void Inverter::processEnergyInput(float panelVoltage, float batteryTemp)
 {
+    this->inputVoltage = panelVoltage;
+    this->internalTemp = batteryTemp;
+    this->outputPower = panelVoltage * 15.0f;
     try
     {
         if (panelVoltage > 60.0f)
