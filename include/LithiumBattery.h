@@ -28,7 +28,7 @@ public:
             currentVoltage = MAX_VOLTAGE;
         }
     }
-    void displayStatus() override
+    void displayStatus() const override
     {
         std::cout << "[Lithium Battery - " << name << "] Voltage: " << currentVoltage << "V, SoC: " << stateOfCharge << "%, Temp: " << temperature << "°C\n";
     }

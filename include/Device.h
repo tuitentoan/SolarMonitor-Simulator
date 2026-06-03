@@ -14,7 +14,7 @@ public:
     virtual ~Device() = default;
 
     virtual void updateTelemetry() = 0;
-    virtual void displayStatus() = 0;
+    virtual void displayStatus() const = 0;
 };
 
 #endif
