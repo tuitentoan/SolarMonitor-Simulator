@@ -68,7 +68,7 @@ void Inverter::displayStatus() const
     std::cout << "[Inverter - " << name << "] Input V: " << inputVoltage
               << "V, Load P: " << outputPower << "W, Inverter Temp: " << internalTemp << "C\n";
 
-    // Hiển thị trạng thái mã nhị phân của thanh ghi lỗi để kiểm tra (Debug Technique)
+    // Hiển thị trạng thái mã nhị phân của thanh ghi lỗi
     std::cout << "-> Thanh ghi loi (Status Register Binary): ";
     for (int i = 7; i >= 0; --i)
     {
